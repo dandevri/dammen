@@ -20,3 +20,31 @@ Geavanceerde features zoals de ‘Dam’ en meerdere keren achter elkaar kunnen 
 * Dammen heeft wat mij **betreft een interface nodig**, daarom niet besloten om de output via de CLI te doen maar netjes als UI.
 * De logica is niet complex genoeg **om het gebruik van een (SPA) framework te verantwoorden**. Vandaar gekozen voor vanilla JavaScript, eventuele complexere state management daar kan ik **de DOM** voor gebruiken.
 * _Waarom gebruik je dan Astro?_ Puur voor het feit als ik toch besluit om iets meer interactieve componenten te hebben ik _partial hydration_ kan gebruiken. En Astro stond nog op m'n lijstje om ooit een keer te gebruiken 🤷‍♀️
+
+## Install
+
+1. Installeer node (NPM krijg je er gratis bij) met de installer of NVM
+
+```
+node -v && npm -v
+```
+
+2. Git clone het project naar je lokale machine
+
+```
+https://github.com/dandevri/dammen.git
+```
+
+3. Installeer de dependencies 
+```
+npm install
+```
+
+4. Run de development (of build) commands
+```
+npm run dev
+```
+
+## License
+
+[MIT][license] © [Danny de Vries][author]
