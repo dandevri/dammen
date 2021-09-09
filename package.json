@@ -19,5 +19,9 @@
   "homepage": "https://github.com/dandevri/dammen#readme",
   "dependencies": {
     "astro": "^0.20.4"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "postcss": "^8.3.6"
   }
 }
