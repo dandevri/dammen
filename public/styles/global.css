@@ -1,4 +1,37 @@
 body {
   background: #040463;
   color: white;
+  margin: 12vh 25vw;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 62px);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  font-size: 4em;
+}
+
+h1, h2 {
+  font-family: monospace;
+  background: white;
+  color:  #040463;
+  padding: 0.5em;
+  width: max-content;
+  position: absolute;
+  transform: translateX(-2em) translateY(-2.2em) rotate(-10deg);
+}
+
+.white {
+  background: white;
 }
