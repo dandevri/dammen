@@ -1,0 +1,18 @@
+<script hoist>
+
+  // Would be cleaner if I actually used the system date time but this will work 🤷‍♀️
+    const minutes = document.getElementById("minutes");
+    let totalSeconds = 0;
+
+    // Interval of 1 second 
+    setInterval(setTime, 1000);
+
+    function setTime() {
+      ++totalSeconds;
+
+      // Could probably add nodes instead of innerhtml
+      minutes.innerHTML = parseInt(totalSeconds / 60);
+    }
+  </script>
+
+<p>Speeltijd: <span id="minutes"> 0</span>m</p>
