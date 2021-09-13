@@ -36,6 +36,7 @@ h1 {
 
 .white {
   background: white;
+  color: #040463
 }
 
 img {
@@ -60,4 +61,16 @@ section {
 
 ul {
   margin: 2em 0;
+}
+
+span {
+  transition: all 250ms ease;
+}
+
+.active {
+  transform: scale(1.5);
+}
+
+.thing {
+  background: red;
 }
