@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "lint": "eslint .",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
     "lint:fix": "eslint . --fix"
   },
   "repository": {
@@ -44,6 +45,8 @@
     "postcss-for": "^2.1.1",
     "postcss-import": "^14.0.2",
     "prettier": "^2.4.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.4.3"
   }
 }
