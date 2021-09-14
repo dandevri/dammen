@@ -19,8 +19,26 @@ cells.forEach(stone => {
     } else {
       place2 = stone.dataset.index;
       console.log('Position2:' + place2);
+      moveposition();
+    }
+  })
+})
 
-      if(place2 < place1) {
+closeButton.addEventListener('click', function() {
+  notification.classList.remove('show');
+  grid.classList.remove('diffuse');
+})
+
+
+/**
+ * Function to handle positions of the stones based on event listener clicks
+ * @param item1 - Span (stone) in first selected cell
+ * @param item2 - Second selected cell
+ * @param item3 - Whole stone cell
+ */
+
+function moveposition() {
+  if(place2 < place1) {
 
         // Select stone positions
         const item1 = document.querySelector(`[data-index="${place1}"] span`);
@@ -41,11 +59,4 @@ cells.forEach(stone => {
         notification.classList.add('show');
         grid.classList.add('diffuse');
       }
-    }
-  })
-})
-
-closeButton.addEventListener('click', function() {
-  notification.classList.remove('show');
-  grid.classList.remove('diffuse');
-})
+}

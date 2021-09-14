@@ -1,6 +1,6 @@
 span {
   animation: fadeIn 300ms ease;
-  animation-delay: 1000ms;
+  animation-delay: 200ms;
   animation-fill-mode: forwards;
   opacity: 0;
 }

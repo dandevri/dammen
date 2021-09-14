@@ -10,8 +10,12 @@ span {
   transition: all 250ms ease;
 }
 
+li {
+  transition: all 250ms ease;
+}
+
 .active {
-  transform: scale(1.5);
+  border: 5px solid #ed5965;
 }
 
 .thing {
