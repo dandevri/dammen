@@ -1,0 +1,21 @@
+span {
+  animation: fadeIn 300ms ease;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@for $i from 1 trough 100 {
+  span:nth-child(#{$i}){
+    animation-delay: $i * 50ms;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

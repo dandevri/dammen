@@ -1,0 +1,31 @@
+section {
+  display: flex;
+}
+
+ul {
+  margin: 2em 0;
+}
+
+span {
+  transition: all 250ms ease;
+}
+
+.active {
+  transform: scale(1.5);
+}
+
+.thing {
+  background: red;
+}
+
+.one {
+  color: #21c6d7;
+}
+
+.two {
+  color: #57be8e;
+}
+
+.white {
+  background: white;
+}

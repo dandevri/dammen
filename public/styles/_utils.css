@@ -1,0 +1,50 @@
+.invalid {
+  opacity: 0;
+  font-size: 2em;
+  position: absolute;
+  top: 40vh;
+  margin: 0 auto;
+  background: white;
+  color: #040463;
+  padding: 1em;
+  transition: all 250ms ease;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  pointer-events: none;
+  flex-direction: column;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.diffuse {
+  filter: blur(2px);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: 1px solid #040463;
+  background: none;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.container a {
+  text-decoration: none;
+  padding: 0.5em;
+  background: #040463;
+  color: white;
+  margin-left: 2vw;
+  vertical-align: center;
+}
