@@ -1,5 +1,6 @@
 ---
 import Timer from '../components/timer.astro';
+import Invalid from '../components/invalid.astro';
 ---
 
 <html>
@@ -49,7 +50,7 @@ import Timer from '../components/timer.astro';
         <li data-index="28" class="white stone one"><span>●</span></li>
         <li data-index="29"></li>
         <li data-index="30" class="white stone one"><span>●</span></li>
-        
+
         <li data-index="31" class="white stone one"><span>●</span></li>
         <li data-index="32"></li>
         <li data-index="33" class="white stone one"><span>●</span></li>
@@ -115,7 +116,7 @@ import Timer from '../components/timer.astro';
         <li data-index="88" class="white stone two"><span>●</span></li>
         <li data-index="89"></li>
         <li data-index="90" class="white stone two"><span>●</span></li>
-        
+
         <li data-index="91" class="white stone two"><span>●</span></li>
         <li data-index="92"></li>
         <li data-index="93" class="white stone two"><span>●</span></li>
@@ -127,10 +128,13 @@ import Timer from '../components/timer.astro';
         <li data-index="99" class="white stone two"><span>●</span></li>
         <li data-index="100"></li>
     </ul>
+      
       <section>
         <img src="/img/bob.jpg">
         <h2>Bob</h2>
         <Timer />
       </section>
+
+      <Invalid />
   </body>
 </html>

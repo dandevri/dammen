@@ -4,10 +4,13 @@ let place2;
 
 // Nodelists of stone positions and grid cells
 const stones = document.querySelectorAll('.white span');
-const grid = document.querySelectorAll('ul li');
+const cells = document.querySelectorAll('ul li');
+const grid = document.querySelector('ul');
+const closeButton = document.querySelector('.buttons button');
+const notification = document.querySelector('.invalid');
 
 // Click handler for stones, switch positions of stones based on index
-grid.forEach(stone => {
+cells.forEach(stone => {
   stone.addEventListener('click', function() {
     if(stone.classList.contains('stone')) {
       stone.classList.add('active');
@@ -16,13 +19,33 @@ grid.forEach(stone => {
     } else {
       place2 = stone.dataset.index;
       console.log('Position2:' + place2);
-      const item1 = document.querySelector(`[data-index="${place1}"] span`);
-      const item2 = document.querySelector(`[data-index="${place2}"]`);
-      const item3 = document.querySelector(`[data-index="${place1}"]`);
-      item1.remove();
-      item3.classList.remove('stone');
-      item3.classList.remove('active');
-      item2.insertAdjacentHTML('beforeend', '<span>●</span>');
+
+      if(place2 < place1) {
+
+        // Select stone positions
+        const item1 = document.querySelector(`[data-index="${place1}"] span`);
+        const item2 = document.querySelector(`[data-index="${place2}"]`);
+        const item3 = document.querySelector(`[data-index="${place1}"]`);
+
+        // remove stones
+        item1.remove();
+        item3.classList.remove('stone');
+        item3.classList.remove('active');
+        item2.insertAdjacentHTML('beforeend', '<span>●</span>');
+        item2.classList.add('stone');
+
+        if(item3.classList.contains('two')) {
+          item2.classList.add('two');
+        }
+      } else {
+        notification.classList.add('show');
+        grid.classList.add('diffuse');
+      }
     }
   })
+})
+
+closeButton.addEventListener('click', function() {
+  notification.classList.remove('show');
+  grid.classList.remove('diffuse');
 })
