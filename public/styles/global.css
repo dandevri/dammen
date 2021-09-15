@@ -78,3 +78,7 @@ article {
   right: 13%;
   transform: rotate(85deg);
 }
+
+.black {
+  pointer-events: none;
+}
