@@ -1,6 +1,7 @@
 ---
 import Timer from '../components/timer.astro';
 import Invalid from '../components/invalid.astro';
+import Reset from '../components/reset.astro';
 ---
 
 <html>
@@ -12,10 +13,10 @@ import Invalid from '../components/invalid.astro';
   </head>
   <body>
     <h1>dam academy</h1>
+    <Timer />
     <section>
       <img src="/img/nadine.jpg">
       <h2>Nadine</h2>
-      <Timer />
     </section>
     <ul>
       <li data-index="1"></li>
@@ -128,13 +129,13 @@ import Invalid from '../components/invalid.astro';
         <li data-index="99" class="white stone two"><span>●</span></li>
         <li data-index="100"></li>
     </ul>
-      
+
       <section>
         <img src="/img/bob.jpg">
         <h2>Bob</h2>
-        <Timer />
       </section>
 
       <Invalid />
+      <Reset />
   </body>
 </html>

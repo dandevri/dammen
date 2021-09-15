@@ -32,7 +32,7 @@ li {
 h1 {
   font-family: monospace;
   background: white;
-  color:  #040463;
+  color: #040463;
   padding: 0.5em;
   width: max-content;
   position: absolute;
@@ -56,8 +56,10 @@ section img {
 
 section {
   background: white;
-  width: 40%;
+  width: 25%;
   padding: 0.5em;
+  position: relative;
+  z-index: 1;
 }
 
 section:last-of-type {
@@ -66,7 +68,7 @@ section:last-of-type {
 }
 
 section:first-of-type {
-  transform: rotate(185deg) translateY(-1em) translateX(-30em) ;
+  transform: rotate(185deg) translateY(1em) translateX(-38em);
   color: #21c6d7;
 }
 
